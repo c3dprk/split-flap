@@ -189,12 +189,12 @@ $EndComp
 $Comp
 L 4001 U?
 U 3 1 597E73DB
-P 1900 4450
-F 0 "U?" H 1900 4500 50  0000 C CNN
-F 1 "4001" H 1900 4400 50  0000 C CNN
-F 2 "" H 1900 4450 60  0001 C CNN
-F 3 "" H 1900 4450 60  0001 C CNN
-	3    1900 4450
+P 1950 4450
+F 0 "U?" H 1950 4500 50  0000 C CNN
+F 1 "4001" H 1950 4400 50  0000 C CNN
+F 2 "" H 1950 4450 60  0001 C CNN
+F 3 "" H 1950 4450 60  0001 C CNN
+	3    1950 4450
 	1    0    0    1   
 $EndComp
 $Comp
@@ -365,78 +365,78 @@ $EndComp
 $Comp
 L R R10
 U 1 1 597ECD18
-P 2700 4450
-F 0 "R10" V 2780 4450 50  0000 C CNN
-F 1 "10k" V 2700 4450 50  0000 C CNN
-F 2 "" V 2630 4450 50  0001 C CNN
-F 3 "" H 2700 4450 50  0001 C CNN
-	1    2700 4450
+P 2750 4450
+F 0 "R10" V 2830 4450 50  0000 C CNN
+F 1 "10k" V 2750 4450 50  0000 C CNN
+F 2 "" V 2680 4450 50  0001 C CNN
+F 3 "" H 2750 4450 50  0001 C CNN
+	1    2750 4450
 	0    1    1    0   
 $EndComp
 $Comp
 L PN2222A T4
 U 1 1 597ECE83
-P 3100 4450
-F 0 "T4" H 3300 4525 50  0000 L CNN
-F 1 "PN2222A" H 3300 4450 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 3300 4375 50  0001 L CIN
-F 3 "" H 3100 4450 50  0001 L CNN
-	1    3100 4450
+P 3150 4450
+F 0 "T4" H 3350 4525 50  0000 L CNN
+F 1 "PN2222A" H 3350 4450 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 3350 4375 50  0001 L CIN
+F 3 "" H 3150 4450 50  0001 L CNN
+	1    3150 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR06
 U 1 1 597ED0C2
-P 3200 4750
-F 0 "#PWR06" H 3200 4500 50  0001 C CNN
-F 1 "GND" H 3200 4600 50  0000 C CNN
-F 2 "" H 3200 4750 50  0001 C CNN
-F 3 "" H 3200 4750 50  0001 C CNN
-	1    3200 4750
+P 3250 4750
+F 0 "#PWR06" H 3250 4500 50  0001 C CNN
+F 1 "GND" H 3250 4600 50  0000 C CNN
+F 2 "" H 3250 4750 50  0001 C CNN
+F 3 "" H 3250 4750 50  0001 C CNN
+	1    3250 4750
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R12
 U 1 1 597ED2C3
-P 3350 4450
-F 0 "R12" V 3430 4450 50  0000 C CNN
-F 1 "100k" V 3350 4450 50  0000 C CNN
-F 2 "" V 3280 4450 50  0001 C CNN
-F 3 "" H 3350 4450 50  0001 C CNN
-	1    3350 4450
+P 3400 4450
+F 0 "R12" V 3480 4450 50  0000 C CNN
+F 1 "100k" V 3400 4450 50  0000 C CNN
+F 2 "" V 3330 4450 50  0001 C CNN
+F 3 "" H 3400 4450 50  0001 C CNN
+	1    3400 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R4
 U 1 1 597EE357
-P 3550 4200
-F 0 "R4" V 3630 4200 50  0000 C CNN
-F 1 "27k" V 3550 4200 50  0000 C CNN
-F 2 "" V 3480 4200 50  0001 C CNN
-F 3 "" H 3550 4200 50  0001 C CNN
-	1    3550 4200
+P 3600 4200
+F 0 "R4" V 3680 4200 50  0000 C CNN
+F 1 "27k" V 3600 4200 50  0000 C CNN
+F 2 "" V 3530 4200 50  0001 C CNN
+F 3 "" H 3600 4200 50  0001 C CNN
+	1    3600 4200
 	0    1    1    0   
 $EndComp
 $Comp
 L C C3
 U 1 1 597EE599
-P 3750 4400
-F 0 "C3" H 3775 4500 50  0000 L CNN
-F 1 "47n" H 3775 4300 50  0000 L CNN
-F 2 "" H 3788 4250 50  0001 C CNN
-F 3 "" H 3750 4400 50  0001 C CNN
-	1    3750 4400
+P 3800 4400
+F 0 "C3" H 3825 4500 50  0000 L CNN
+F 1 "47n" H 3825 4300 50  0000 L CNN
+F 2 "" H 3838 4250 50  0001 C CNN
+F 3 "" H 3800 4400 50  0001 C CNN
+	1    3800 4400
 	-1   0    0    -1  
 $EndComp
 $Comp
 L GND #PWR07
 U 1 1 597EE7A6
-P 3750 4600
-F 0 "#PWR07" H 3750 4350 50  0001 C CNN
-F 1 "GND" H 3750 4450 50  0000 C CNN
-F 2 "" H 3750 4600 50  0001 C CNN
-F 3 "" H 3750 4600 50  0001 C CNN
-	1    3750 4600
+P 3800 4600
+F 0 "#PWR07" H 3800 4350 50  0001 C CNN
+F 1 "GND" H 3800 4450 50  0000 C CNN
+F 2 "" H 3800 4600 50  0001 C CNN
+F 3 "" H 3800 4600 50  0001 C CNN
+	1    3800 4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -789,9 +789,9 @@ N_START_INT
 Text GLabel 5500 2850 0    60   Input ~ 0
 N_START_INT
 Text GLabel 8100 2300 2    60   Input ~ 0
-SEL
-Text GLabel 1250 4350 0    60   Input ~ 0
-SEL
+N_SEL
+Text GLabel 1300 4350 0    60   Input ~ 0
+N_SEL
 Text GLabel 2000 5650 0    60   Input ~ 0
 SEL
 $Comp
@@ -829,13 +829,13 @@ F 3 "" H 10300 800 50  0001 C CNN
 $EndComp
 Text GLabel 3350 5850 2    60   Input ~ 0
 RUN
-Text GLabel 1250 4550 0    60   Input ~ 0
+Text GLabel 1300 4550 0    60   Input ~ 0
 RUN
 Text GLabel 9000 1250 0    60   Input ~ 0
 RUN
 Text Notes 9150 1900 0    60   ~ 0
 Motor Driver
-Text GLabel 3350 4100 1    60   Input ~ 0
+Text GLabel 3400 4100 1    60   Input ~ 0
 ENCODER_GND
 $Comp
 L R R19
@@ -1046,42 +1046,42 @@ Wire Wire Line
 Wire Wire Line
 	2000 5450 2050 5450
 Wire Wire Line
-	2500 4450 2550 4450
+	2550 4450 2600 4450
 Wire Wire Line
-	2850 4450 2900 4450
+	2900 4450 2950 4450
 Wire Wire Line
-	3200 4650 3200 4700
+	3250 4650 3250 4700
 Wire Wire Line
-	3200 4700 3200 4750
+	3250 4700 3250 4750
 Wire Wire Line
-	3200 4200 3200 4250
+	3250 4200 3250 4250
 Wire Wire Line
-	3400 4200 3350 4200
+	3250 4200 3400 4200
 Wire Wire Line
-	3350 4200 3200 4200
+	3400 4200 3450 4200
 Wire Wire Line
-	3350 4100 3350 4200
+	3400 4100 3400 4200
 Wire Wire Line
-	3350 4200 3350 4300
+	3400 4200 3400 4300
 Wire Wire Line
-	3200 4700 3350 4700
+	3250 4700 3400 4700
 Wire Wire Line
-	3350 4700 3350 4600
-Connection ~ 3200 4700
-Connection ~ 3350 4200
+	3400 4700 3400 4600
+Connection ~ 3250 4700
+Connection ~ 3400 4200
 Wire Wire Line
-	4300 4200 3750 4200
+	3750 4200 3800 4200
 Wire Wire Line
-	3750 4200 3700 4200
+	3800 4200 4300 4200
 Wire Wire Line
-	3750 4200 3750 4250
+	3800 4200 3800 4250
 Wire Wire Line
-	3750 4550 3750 4600
-Connection ~ 3750 4200
+	3800 4550 3800 4600
+Connection ~ 3800 4200
 Wire Wire Line
 	2650 6200 2650 6250
 Wire Wire Line
-	1300 4350 1250 4350
+	1350 4350 1300 4350
 Wire Wire Line
 	6850 2200 6800 2200
 Wire Wire Line
@@ -1091,24 +1091,24 @@ Wire Wire Line
 Wire Wire Line
 	6800 2300 6750 2300
 Wire Wire Line
-	1300 4550 1250 4550
+	1350 4550 1300 4550
 Connection ~ 6800 2300
 Wire Wire Line
 	2650 5050 2650 5100
 Wire Wire Line
-	5950 4300 5950 4250
+	5950 4250 5950 4300
 Wire Wire Line
-	5950 4250 5900 4250
+	5850 4250 5900 4250
 Wire Wire Line
-	5900 4250 5850 4250
+	5900 4250 5950 4250
 Wire Wire Line
 	5850 4250 5850 4300
 Wire Wire Line
 	5950 4650 5950 4600
 Wire Wire Line
-	5950 4650 5900 4650
+	5850 4650 5900 4650
 Wire Wire Line
-	5900 4650 5850 4650
+	5900 4650 5950 4650
 Wire Wire Line
 	5850 4650 5850 4600
 Wire Wire Line
@@ -1124,9 +1124,9 @@ Wire Wire Line
 Wire Wire Line
 	5550 4200 5500 4200
 Wire Wire Line
-	5950 4200 5900 4200
+	5850 4200 5900 4200
 Wire Wire Line
-	5900 4200 5850 4200
+	5900 4200 5950 4200
 Connection ~ 5900 4200
 Wire Wire Line
 	10050 1500 10100 1500
@@ -1536,8 +1536,8 @@ Wire Notes Line
 	8350 3100 8350 2050
 Wire Notes Line
 	8350 2050 4850 2050
-Text Notes 3700 5600 0    60   ~ 0
-Some Weird State Machine Or Something\n¯\_(-_-)_/¯
+Text Notes 3900 5600 0    60   ~ 0
+Some Weird State Machine Or Something\n¯\_(-_-)_/¯\nDunno, Swiss engineers were weird back then.
 Wire Notes Line
 	950  3350 6400 3350
 Wire Notes Line
@@ -1552,10 +1552,12 @@ Wire Wire Line
 	5500 2400 5550 2400
 Text Notes 750  3050 0    60   ~ 0
 21 Resistors\n12 Diodes\n4 Capacitors\n1 NPN Transistor\n2 NPN Darlingtons\n1 Triac
-Text Notes 3350 4900 0    60   ~ 0
+Text Notes 3400 4900 0    60   ~ 0
 RC1 = 1.3ms
 Text Notes 950  7550 0    60   ~ 0
-Timing Diagram:\nhttps://github.com/c3dprk/lepidoptera/blob/master/pdf/Timing_diagram.pdf\n\nWhen the strobe brush touches the copper track (t1), input D of the FF2 goes up to "1".\nRC1 ensures a "clean" edge despite the contact bounce. \nAt the first edge of ADC after RC1, an impulse formed by RC2, causes a preset and the moteru is abbreviated.\nFrom t3, that is to say after RC2, the encoder is ready to be read.\nDuring t4-t5, the IC reads the status of the rover.\nThe decision of the IC to leave it with engine stopped or to make it start intervenes in t5 and the transfer is done in t6.\nEn t7 le balai du strobe quitte a la piste cuivree.\nRC3 ensures a clean descending flank.
+Timing Diagram:\nhttps://github.com/c3dprk/lepidoptera/blob/master/pdf/Timing_diagram.pdf\n\nWhen the strobe brush touches the copper track (t1), input D of the FF2 goes up to "1".\nRC1 ensures a "clean" edge despite the contact bounce. \nAt the first edge of ADC after RC1, an impulse formed by RC2, causes a preset and the motor is abbreviated.\nFrom t3, that is to say after RC2, the encoder is ready to be read.\nDuring t4-t5, the IC reads the status of the rover.\nThe decision of the IC to leave it with engine stopped or to make it start intervenes in t5 and the transfer is done in t6.\nEn t7 le balai du strobe quitte a la piste cuivree.\nRC3 ensures a clean descending flank.
 Text Notes 5750 4000 0    60   ~ 0
 RC2
+Wire Wire Line
+	5900 4200 5900 4250
 $EndSCHEMATC
