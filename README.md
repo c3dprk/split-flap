@@ -9,7 +9,7 @@ reverse engineering.
 This directory contains eeschma project files which document the actual circuit
 board of the displays
 
-![svg of the schematic](https://raw.githubusercontent.com/c3dprk/split-flap/master/split_flap.sch.svg)
+![png of the schematic](https://raw.githubusercontent.com/c3dprk/split-flap/master/split_flap.png)
 
 # pdf
 This directory contains pdf scans of the original documentation. There are
