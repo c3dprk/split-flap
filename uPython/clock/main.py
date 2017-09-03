@@ -64,6 +64,8 @@ def go_to(adc, adl, val):
 def update_time():
     hour, minute = rtc.datetime()[4:6]
     hour = (hour+int(TIME_ZONE))%24
+    if 0 == minute:
+        settime()
     go_to(adc_hour, None, HOUR_LUT[hour])
     go_to(adc_minute, None, MINUTE_LUT[minute])
 
