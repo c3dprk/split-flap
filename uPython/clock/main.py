@@ -18,7 +18,10 @@ adc_hour.off()
 adc_minute = Pin(15, Pin.OUT)
 adc_minute.off()
 
-settime()
+try:
+    settime()
+except:
+    pass
 rtc = RTC()
 
 def select(adc, adl):
@@ -65,7 +68,10 @@ def update_time():
     hour, minute = rtc.datetime()[4:6]
     hour = (hour+int(TIME_ZONE))%24
     if 0 == minute:
-        settime()
+        try:
+            settime()
+        except:
+            pass
     go_to(adc_hour, None, HOUR_LUT[hour])
     go_to(adc_minute, None, MINUTE_LUT[minute])
 
