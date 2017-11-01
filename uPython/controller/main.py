@@ -5,7 +5,7 @@ from time import sleep
 OUT = Pin.OUT
 IN = Pin.IN
 
-NUM_COL = 8
+NUM_COL = 16
 NUM_ROW = 1
 
 char_lut = luts.char_lut

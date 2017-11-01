@@ -75,6 +75,11 @@ def update_time():
     go_to(adc_hour, None, HOUR_LUT[hour])
     go_to(adc_minute, None, MINUTE_LUT[minute])
 
+def test_62(adc, adl):
+    for i in range(62, 0, -1):
+        go_to(adc, adl, i)
+        print(i)
+
 while True:
     update_time()
     sleep(5)
