@@ -44,8 +44,10 @@ void readEncoder(){
   
   pinMode(PIN_STROBE, INPUT);
 
-  if(encoder_val == 63 || encoder_val != prev_val + 1)
+  if(encoder_val == 63 || encoder_val != prev_val + 1){
     timerReadEncoder.once_ms(1, readEncoder);
+    return;
+  }
 
   if(encoder_val == encoder_desired_val){
     digitalWrite(PIN_TRIAC_N, 1); 
@@ -85,7 +87,7 @@ void loop() {
       encoder_desired_val++;
     if(ch == 's')
       encoder_desired_val--;
-    if(encoder_desired_val < 1)encoder_desired_val=63;
+    if(encoder_desired_val < 1)encoder_desired_val=62;
     if(encoder_desired_val > 62)encoder_desired_val=1;
     if(ch == 'x')
       digitalWrite(PIN_TRIAC_N, 1);
