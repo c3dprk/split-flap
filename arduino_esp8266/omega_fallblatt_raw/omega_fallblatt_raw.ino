@@ -23,8 +23,8 @@ extern "C" {
 
 #define STA_HOSTNAME "flipflap"
 
-const char* ssid = "***REMOVED***";
-const char* password = "***REMOVED***";
+const char* ssid = "";
+const char* password = "";
 
 ESP8266WebServer server(80);
 
@@ -75,6 +75,7 @@ void setup() {
   WiFi.mode(WIFI_STA);
   Serial.printf("Connecting to %s\n", ssid);
   if (String(WiFi.SSID()) != String(ssid)) {
+    WiFi.hostname(STA_HOSTNAME);
     WiFi.begin(ssid, password);
   }
 
@@ -100,14 +101,14 @@ void setup() {
     encoder_desired_val = value.toInt() + 1;
     digitalWrite(PIN_TRIAC_N, 0);
   });
-/*
-  server.on("/flapDown", HTTP_POST, []() {
-    encoder_desired_val--;
-    if(encoder_desired_val < 1)
-      encoder_desired_val = FLAPCOUNT;
-    digitalWrite(PIN_TRIAC_N, 0);
-  });
-*/
+  /*
+    server.on("/flapDown", HTTP_POST, []() {
+      encoder_desired_val--;
+      if(encoder_desired_val < 1)
+        encoder_desired_val = FLAPCOUNT;
+      digitalWrite(PIN_TRIAC_N, 0);
+    });
+  */
   server.serveStatic("/index.htm", SPIFFS, "/index.htm");
   server.serveStatic("/js", SPIFFS, "/js");
   server.serveStatic("/", SPIFFS, "/index.htm");
@@ -120,68 +121,68 @@ void setup() {
 }
 
 String flapNames[] = {
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "10",
-  "11",
-  "12",
-  "13",
-  "14",
-  "15",
-  "16",
-  "17",
-  "18",
-  "19",
-  "20",
-  "21",
-  "22",
-  "23",
-  "24",
-  "25",
-  "26",
-  "27",
-  "28",
-  "29",
-  "30",
-  "31",
-  "32",
-  "33",
-  "34",
-  "35",
-  "36",
-  "37",
-  "38",
-  "39",
-  "40",
-  "41",
-  "42",
-  "43",
-  "44",
-  "45",
-  "46",
-  "47",
-  "48",
-  "49",
-  "50",
-  "51",
-  "52",
-  "53",
-  "54",
-  "55",
-  "56",
-  "57",
-  "58",
-  "59",
-  "60",
-  "61",
-  "62"
+  "Hält nicht in Reinfeld",
+  "Geänderte Wagenreihung",
+  "fährt in 3 Teilen",
+  "fährt in 2 Teilen",
+  "fährt nicht über..",
+  "Hält nicht bis..",
+  "Hält nicht in..",
+  "Hält nicht in..",
+  "Hält nicht bis Münster",
+  "Hält nicht bis Neumünster",
+  "Hält nicht bis Puttgarden",
+  "Hält nicht bis Lübeck",
+  "Hält nicht bis Hannover",
+  "Hält nicht bis Bremen",
+  "Hält nicht überall",
+  "Bitte Ansage beachten",
+  "etwa 45 Min später",
+  "etwa 30 Min später",
+  "etwa 20 Min später",
+  "etwa 15 Min später",
+  "etwa 10 Min später",
+  "[nichts]",
+  "Schienenersatzverkehr ab..",
+  "ICE Fahrpreis",
+  "Zusätzlicher Zug besonderer Fahrpreis",
+  "Schienenersatzverkehr",
+  "Hält nicht in..",
+  "S..",
+  "Hält nicht bis..",
+  "Hält nicht bis..",
+  "mehr als 2 Std später",
+  "etwa 120 Min später",
+  "etwa 100 Min später",
+  "etwa 80 Min später",
+  "etwa 60 Min später",
+  "Hält nicht bis..",
+  "Hält nicht bis..",
+  "S..",
+  "Zusätzlicher Zug",
+  "Zuschlag siehe Abfahrtplan",
+  "mit Zuschlag",
+  "Zusätzlicher Zug mit Zuschlag",
+  "Zusätzlicher Schnellzug",
+  "ALPEN-SEE-EXPRESS",
+  "bis Friedrichsruh",
+  "ALPEN-SEE-EXPRESS",
+  "besonderer Fahrpreis",
+  "Messe-Rapid nur 1. Kl.",
+  "Reisebüro-Sonderzug",
+  "Sonderzug",
+  "nur 2. Klasse",
+  "Fahrt ins Blaue",
+  "Umleitung über Flensburg",
+  "HVV Fahrausweise ungültig",
+  "Mit [Pax-Waggon]",
+  "Nur Schlaf-u.Liegewagen",
+  "[Fähre] Helogland",
+  "City-Bahn..",
+  "S..",
+  "S..",
+  "S..",
+  "S4.."
 };
 
 void sendFormData()
